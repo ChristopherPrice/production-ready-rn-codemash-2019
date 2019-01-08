@@ -10,12 +10,16 @@ export default class LoginScreen extends React.Component {
           placeholder="Username"
         />
         <Button 
-          onPress={() => {}}
+          onPress={() => {this.handlePress()}}
           title="Login"
         />
         <Text style={styles.loginStatus}>You are not currently logged in.</Text>
       </View>
     );
+  }
+
+  handlePress() {
+    Alert.alert('Your message here!');
   }  
 }
 
