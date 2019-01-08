@@ -47,7 +47,7 @@ describe('helloWorld', () => {
     describe('when the name is bad', () => {
       it('says hello', () => {
         // Replace this line with an expectation that causes the test to fail:
-        expect(true).toBe(true);
+        expect(helloWorld('bad')).toBe('Hello world, bad!');
       });
     });
   });
