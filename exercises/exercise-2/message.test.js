@@ -14,7 +14,7 @@ describe('<Message />', () => {
 
   describe('2', () => {
     it('renders the text "Here\'s a secret message for you: hello!"', () => {
-      const { getByText } = render(<Message />);
+      const { getByText } = render(<Message isASecret={true} />);
 
       getByText(/Here's a secret message for you: hello!/);
     });
